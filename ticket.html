@@ -69,7 +69,7 @@
         $("#total").html("$50");
      }
      if(tt=="psnp"){
-        $("#tt").html("Physical Student No Presenter");
+        $("#tt").html("Physical Student Non Presenter");
         $("#total").html("$30");
      }
      if(tt=="osp"){
@@ -261,26 +261,6 @@
                                 <div class="sec-title"><h2>Ticket Details</h2></div>
                                 <div class="billing-inner">
                                     <div class="row clearfix">
-
-                                        <!--Form Group-->
-                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                            <div class="field-label">Ticket Type </div>
-                                            <select autocomplete="off" name="ticket" id="ticket-type">
-                                                <option selected="selected" value = "none">Select a ticket</option>
-                                                <option value="pp-member">Physical Presenter (IEEE Member)</option>
-                                                <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
-                                                <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
-                                                <option value="pnp-nmember">Physical Non Presenter (IEEE Non-Member)</option>
-                                                <option value="op-member">Online Presenter (IEEE Member)</option>
-                                                <option value="op-nmember">Online Presenter (IEEE Non-Member)</option>
-                                                <option value="onp-member">Online Non Presenter (IEEE Member)</option>
-                                                <option value="onp-nmember">Online Non Presenter (IEEE Non-Member)</option>
-                                                <option value="psp">Physical Student Presenter</option>
-                                                <option value="psnp">Physical Student Non Presenter</option>
-                                                <option value="osp">Online Student Presenter</option>
-                                                <option value="osnp">Online Student Non Presenter</option>
-                                            </select>
-                                        </div>
                                         
                                         <!--Form Group-->
                                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
@@ -297,7 +277,7 @@
                                         <!--Form Group-->
                                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                             <div class="field-label">Affiliation </div>
-                                            <input type="text" name="affiliation" value="" placeholder="Company name">
+                                            <input type="text" name="affiliation" value="" placeholder="Affiliation">
                                         </div>
                                         
                                         <!--Form Group-->
@@ -577,6 +557,26 @@
                                             <div class="field-label">Phone <sup>*</sup></div>
                                             <input type="tel" id="phone" placeholder="Select an option">
                                         </div>
+
+                                                                                <!--Form Group-->
+                                                                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                                                    <div class="field-label">Ticket Type </div>
+                                                                                    <select autocomplete="off" name="ticket" id="ticket-type">
+                                                                                        <option selected="selected" value = "none">Select a ticket</option>
+                                                                                        <option value="pp-member">Physical Presenter (IEEE Member)</option>
+                                                                                        <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
+                                                                                        <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
+                                                                                        <option value="pnp-nmember">Physical Non Presenter (IEEE Non-Member)</option>
+                                                                                        <option value="op-member">Online Presenter (IEEE Member)</option>
+                                                                                        <option value="op-nmember">Online Presenter (IEEE Non-Member)</option>
+                                                                                        <option value="onp-member">Online Non Presenter (IEEE Member)</option>
+                                                                                        <option value="onp-nmember">Online Non Presenter (IEEE Non-Member)</option>
+                                                                                        <option value="psp">Physical Student Presenter</option>
+                                                                                        <option value="psnp">Physical Student Non Presenter</option>
+                                                                                        <option value="osp">Online Student Presenter</option>
+                                                                                        <option value="osnp">Online Student Non Presenter</option>
+                                                                                    </select>
+                                                                                </div>
                                         
                                         <!-- <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="check-box"><input type="checkbox" name="shipping-option" id="account-option"> &ensp; <label for="account-option">Creat an account?</label></div>
@@ -592,6 +592,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             
                             <div class="col-lg-5 col-md-12 col-sm-12">
                                 <div class="sec-title"><h2>Your Ticket</h2></div>
