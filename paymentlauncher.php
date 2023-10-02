@@ -54,8 +54,7 @@ if($ticketType=="osnp"){
   $amount = 20;
 }
 if($ticketType=="none"){
-  $orderDescription="Not Selected";
-  $amount = 00;
+  header('location:ticket.php');
 }
 
 }

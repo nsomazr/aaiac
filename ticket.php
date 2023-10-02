@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script type="text/javascript">
     $(document).ready(function(){
-
+        $("#valid").hide();
         //   const input = document.querySelector("#phone");
         //   window.intlTelInput(input, {
         //     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
@@ -37,22 +37,27 @@
     $("#ticketType").change(function(){
      var tt = $(this).val();
      if (tt=="pp-member") {
+        $("#valid").hide();
         $("#tt").html("Physical Presenter (IEEE Member)");
         $("#total").html("$80");
      }
      if(tt=="pp-nmember"){
+        $("#valid").hide();
         $("#tt").html("Physical Presenter (IEEE Non Member)");
         $("#total").html("$100");
      }
      if(tt=="pnp-member"){
+        $("#valid").hide();
         $("#tt").html("Physical Non Presenter (IEEE Member)");
         $("#total").html("$64");
      }
      if(tt=="pnp-nmember"){
+        $("#valid").hide();
         $("#tt").html("Physical Non Presenter (IEEE Non Member)");
         $("#total").html("$80");
      }
      if (tt=="op-member") {
+        $("#valid").hide();
         $("#tt").html("Online Presenter (IEEE Member)");
         $("#total").html("$64");
      }
@@ -61,30 +66,37 @@
         $("#total").html("$84");
      }
      if(tt=="onp-member"){
+        $("#valid").hide();
         $("#tt").html("Online Non Presenter (IEEE Member)");
         $("#total").html("$40");
      }
      if(tt=="onp-nmember"){
+        $("#valid").hide();
         $("#tt").html("Online Non Presenter (IEEE Non Member)");
         $("#total").html("$50");
      }
      if(tt=="psp"){
+        $("#valid").hide();
         $("#tt").html("Physical Student Presenter");
         $("#total").html("$50");
      }
      if(tt=="psnp"){
+        $("#valid").hide();
         $("#tt").html("Physical Student Non Presenter");
         $("#total").html("$30");
      }
      if(tt=="osp"){
+        $("#valid").hide();
         $("#tt").html("Online Student Presenter");
         $("#total").html("$30");
      }
      if(tt=="osnp"){
+        $("#valid").hide();
         $("#tt").html("Online Student Non Presenter");
         $("#total").html("$20");
      }
      if(tt=="none"){
+        $("#valid").show();
         $("#tt").html("Not Selected");
         $("#total").html("$00");
      }
@@ -290,7 +302,8 @@
                                                 <option value="psnp">Physical Student Non Presenter</option>
                                                 <option value="osp">Online Student Presenter</option>
                                                 <option value="osnp">Online Student Non Presenter</option>
-                                            </select>
+                                            </select><br>
+                                            <div class="field-label text-danger" id="valid">Please select a valid ticket! </div>
                                         </div>
       
                                         
