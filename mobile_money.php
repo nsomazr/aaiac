@@ -113,6 +113,7 @@
 </script>
 </head>
 
+
 <body>
 
 <div class="page-wrapper">
@@ -263,137 +264,113 @@
                 <h1>Buy Ticket</h1>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li>Checkout</li>
+                    <li>Mobile Money Payment</li>
                 </ul> 
             </div>
         </div>
     </section>
     <!--End Page Title-->
-
-    <!--Checkout Page-->
-    <div class="checkout-page">
-        <div class="auto-container">
-                
-            <!--Billing Details-->
-            <div class="billing-details">
-                <div class="shop-form">
-                    <form  enctype="multipart/form-data" action="paymentlauncher.php" method="POST">
-                        <div class="row clearfix">
-                            <div class="col-lg-7 col-md-12 col-sm-12">
-                
-                                <div class="sec-title"><h2>Ticket Details</h2></div>
-                                <div class="billing-inner">
-                                    <div class="row clearfix">
-
-                                        <!--Form Group-->
-                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                            <div class="field-label">Ticket Type </div>
-                                            <select autocomplete="off" name="ticketType" id="ticketType">
-                                                <option selected="selected" value = "none">Select a ticket</option>
-                                                <option value="pp-member">Physical Presenter (IEEE Member)</option>
-                                                <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
-                                                <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
-                                                <option value="pnp-nmember">Physical Non Presenter (IEEE Non-Member)</option>
-                                                <option value="op-member">Online Presenter (IEEE Member)</option>
-                                                <option value="op-nmember">Online Presenter (IEEE Non-Member)</option>
-                                                <option value="onp-member">Online Non Presenter (IEEE Member)</option>
-                                                <option value="onp-nmember">Online Non Presenter (IEEE Non-Member)</option>
-                                                <option value="psp">Physical Student Presenter</option>
-                                                <option value="psnp">Physical Student Non Presenter</option>
-                                                <option value="osp">Online Student Presenter</option>
-                                                <option value="osnp">Online Student Non Presenter</option>
-                                            </select><br>
-                                            <div class="field-label text-danger" id="valid">Please select a valid ticket! </div>
-                                        </div>
-      
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            <div class="col-lg-5 col-md-12 col-sm-12">
-                                <div class="sec-title"><h2>Your Ticket</h2></div>
-                                <div class="shop-order-box">
-                                    <ul class="order-list">
-                                        <li>Ticket Type</li>
-                                        <li id="tt">Not Selected</li>
-                                        <li class="total">Total Fee<span class="dark" id="total">$00</span></li>
-                                    </ul>
-                                    
-                                    
-                                    <!--Place Order-->
-                                    <div class="place-order">
-                                        <!--Payment Options-->
-                                        <div class="radio-option">
-                                            <!-- <img src="assets/images/resource/paypall.jpg" alt="" /></label> -->
-                                        </div>
-                                        
-                                        <button type="submit" name="submit" class="theme-btn btn-style-one" ><span class="btn-title">Credit Card</span></button>
-                                        <a href="mobile_money.php" name="submit" class="theme-btn btn-style-one pull-right" ><span class="btn-title">Mobile Money</span></a>
-                                        
-                                    </div>
-                                    <!--End Place Order-->
-                                    
-                                </div>
-                                
-                                
-                            </div>
-                        </div>                             
-                    </form>
-                    
+    <br>
+    <div class="container">
+        <h1>Payment Instructions</h1>
+        <p>Please follow the instructions below to make the payment:</p>
+        <ol>
+            <li>Choose your preferred mobile network and dial the respective code.</li>
+            <li>Enter the amount based on the current exchange rate and confirm the payment.</li>
+            <li>After successful payment, enter the reference number in the form below and click Submit.</li>
+        </ol>
+        <ul>
+        <h2>Mobile Network Payment Options</h2>
+        <div class="container">
+        <div class="row">
+            <!-- Vodacom -->
+            <div class="col-md-2">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vodacom</h5>
+                        <p class="card-text">Dial *150*00#</p>
+                    </div>
                 </div>
-                
-            </div><!--End Billing Details-->
-        </div>
-    </div>
-
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <div class="auto-container">
-            <!-- Footer Content -->
-            <div class="footer-content wow fadeInUp">
-                <div class="text-center">
-                    <div class="footer-logo"><a href="#"><img src="assets/images/logo-light.png" alt=""></a></div>
-                    <div class="text">Artificial Intelligence for Development AI4D - Lab A unique collaboration between UDOM & NM-AIST to foster Research, Training and Innovation in AI.</div> 
-                </div>
-                <ul class="social-icon-two">
-                    <li><a href="https://twitter.com/ai4dlab_Tz"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="https://www.linkedin.com/company/ai4d-anglophone/mycompany/"><span class="fab fa-linkedin"></span></a></li>
-                </ul>
-
-                <ul class="contact-list-one">
-                    <li><i class="flaticon-location"></i> P. O. Box 490, Dodoma, Tanzania <strong>Address</strong></li>
-                    <li><i class="flaticon-alarm-clock-1"></i>Monday - Friday 9am - 4pm <strong>Timing</strong></li>
-                    <li><i class="flaticon-email-1"></i> <a href="mailto:envato@gmail.com">conference@ai4dlab.or.tz</a> <strong>Mail to us</strong></li>
-                </ul>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <ul class="footer-nav">
-                       <li><a href="#">Terms of Service</a></li> 
-                       <li><a href="#">Privacy Policy</a></li> 
-                    </ul>
-                    
-                    <div class="copyright-text">
-                        <p>Copyright © 2023 All Rights Reserved. Developed by <a href="https://nsoma.me">Nsoma</a></p>
+            <!-- Tigo -->
+            <div class="col-md-2">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tigo</h5>
+                        <p class="card-text">Dial *150*01#</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Airtel -->
+            <div class="col-md-2">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Airtel</h5>
+                        <p class="card-text">Dial *150*60#</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Halotel -->
+            <div class="col-md-2">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Halotel</h5>
+                        <p class="card-text">Dial *150*88#</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Zantel -->
+            <div class="col-md-2">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Zantel</h5>
+                        <p class="card-text">Dial *150*02#</p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
 
-</div>
+        <!-- Payment Form -->
+        <h2 class="mt-5">Payment Reference</h2>
+        <form id="paymentForm" class="mt-3">
+            <div class="form-group">
+                <label for="referenceNumber">Enter Reference Number:</label>
+                <input type="text" id="referenceNumber" name="referenceNumber" class="form-control" required>
+            </div>
+            <div class="ml-auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="ticket.php" class="btn btn-danger">Cancel</a>
+    </div>
+        </form>
 
+        <!-- Display Reference Number -->
+        <div id="result" class="mt-3"></div>
+    </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- jQuery and AJAX Script -->
+    <script>
+        $(document).ready(function () {
+            // Form Validation and AJAX Request
+            $('#paymentForm').submit(function (e) {
+                e.preventDefault();
+                var referenceNumber = $('#referenceNumber').val();
 
-
-
+                // Simulate processing delay (remove this in real implementation)
+                setTimeout(function () {
+                    // Generate a random reference number for demonstration
+                    var randomReference = Math.floor(Math.random() * 1000000000);
+                    $('#result').html('Reference Number: ' + randomReference);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
 
 <!-- End Page Wrapper -->
 
