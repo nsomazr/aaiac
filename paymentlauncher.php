@@ -64,7 +64,7 @@ if($ticketType=="none"){
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="https://test-nmbbank.mtf.gateway.mastercard.com/static/checkout/checkout.min.js" data-error="errorCallback" data-cancel="cancelCallback"></script>
+    <script src="https://nmbbank.gateway.mastercard.com/static/checkout/checkout.min.js" data-error="errorCallback" data-cancel="cancelCallback"></script>
         <script
 			  src="https://code.jquery.com/jquery-3.7.1.min.js"
 			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -80,8 +80,8 @@ if($ticketType=="none"){
             $(document).ready(function(){
 
              // Get amount, orderDescription, and generate a random OrderID
-            var amount = <?=$amount;?>; // Replace with your logic to get the amount
-            var orderDescription = "<?=$orderDescription;?>"; // Replace with your logic to get the order description
+            var amount = <?=$amount;?>; // 
+            var orderDescription = "<?=$orderDescription;?>";
             var OrderID = Math.floor(Math.random() * 1000000); // Generate a random OrderID
      
             $.get("initiateCheckout.php",{ amount: amount, orderDescription: orderDescription, OrderID: OrderID },function(data,status,xhr){

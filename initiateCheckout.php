@@ -4,12 +4,12 @@ $orderAmount = $_GET['amount'];
 $orderDescription = $_GET['orderDescription'];
 $uniqueOrderId =$_GET['OrderID'];
 
-$url = "https://test-nmbbank.mtf.gateway.mastercard.com/api/nvp/version/64";
+$url = "https://nmbbank.gateway.mastercard.com/api/nvp/version/64";
 $data = array(
 "apiOperation"=>"INITIATE_CHECKOUT", 
-"apiPassword"=>"2fb6ea8b2945a4e3234e48f5c35d1240", 
-"apiUsername"=>"merchant.983455000069",
-"merchant"=>"983455000069",
+"apiPassword"=>"70e07366fbc15832fbec759e02938bc1", 
+"apiUsername"=>"merchant.993455000069",
+"merchant"=>"993455000069",
 "interaction.merchant.name"=>"AI4D Research Lab - AAIAC", //replace with a real merchant name 
 "interaction.operation"=>"PURCHASE" ,
 'interaction.cancelUrl'=>"http://localhost/paymentapp/paymentlauncher.php", // replace with a real Url on production

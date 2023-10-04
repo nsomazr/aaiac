@@ -273,13 +273,17 @@
     <br>
     <div class="container">
         <h1>Payment Instructions</h1>
+        <p>Payment Details:</p>
+        <ol>
+            <li>Account Number: <b>408 1011 4173</b></li>
+            <li>Account Name: <b>IEEE Tanzania Section</b></li>
+        </ol>
         <p>Please follow the instructions below to make the payment:</p>
         <ol>
             <li>Choose your preferred mobile network and dial the respective code.</li>
             <li>Enter the amount based on the current exchange rate and confirm the payment.</li>
             <li>After successful payment, enter the reference number in the form below and click Submit.</li>
         </ol>
-        <ul>
         <h2>Mobile Network Payment Options</h2>
         <div class="container">
         <div class="row">
