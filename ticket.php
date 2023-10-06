@@ -348,15 +348,29 @@
         </div>
     </div>
 
+
     <!-- Main Footer -->
-    <footer class="main-footer">
+    <footer class="main-footer" id="contact">
         <div class="auto-container">
             <!-- Footer Content -->
             <div class="footer-content wow fadeInUp">
                 <div class="text-center">
                     <div class="footer-logo"><a href="#"><img src="assets/images/logo-light.png" alt=""></a></div>
-                    <div class="text">Artificial Intelligence for Development AI4D - Lab A unique collaboration between UDOM & NM-AIST to foster Research, Training and Innovation in AI.</div> 
+                    <div class="text">Artificial Intelligence for Development AI4D - Lab A unique collaboration between UDOM & NM-AIST to foster Research, Training and Innovation in AI. The Lab is funded by IDRC and Sida through the AI4D Africa Program.</div> 
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <figure class="image-box"><a href="#" ><img src="assets/images/clients/idrc.jpg" alt="" width="150" height="100"></a></figure>
+                        </div>
+                        <div class="col-md-4">
+                            <figure class="image-box"><a href="#"><img src="assets/images/clients/Sida.jpg" alt="" width="150" height="100"></a></figure>
+                        </div>
+                        <div class="col-md-4">
+                            <figure class="image-box"><a href="#"><img src="assets/images/clients/ai4d.jpg" alt="" width="150" height="100"></a></figure>
+                        </div>
+                    </div>
                 </div>
+                <hr>
                 <ul class="social-icon-two">
                     <li><a href="https://twitter.com/ai4dlab_Tz"><span class="fab fa-twitter"></span></a></li>
                     <li><a href="https://www.linkedin.com/company/ai4d-anglophone/mycompany/"><span class="fab fa-linkedin"></span></a></li>
