@@ -313,10 +313,10 @@
 
                             
                             <div class="col-lg-5 col-md-12 col-sm-12">
-                                <div class="sec-title"><h2>Your Ticket</h2></div>
+                                <div class="sec-title"><h2>Registration Details</h2></div>
                                 <div class="shop-order-box">
                                     <ul class="order-list">
-                                        <li>Ticket Type</li>
+                                        <li>Package Type</li>
                                         <li id="tt">Not Selected</li>
                                         <li class="total">Total Fee<span class="dark" id="total">$00</span></li>
                                     </ul>
