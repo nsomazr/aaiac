@@ -289,7 +289,7 @@
                                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                             <div class="field-label">Register Here</div>
                                             <select autocomplete="off" name="ticketType" id="ticketType">
-                                                <option selected="selected" value = "none">Select a ticket</option>
+                                                <option selected="selected" value = "none">Select a package</option>
                                                 <option value="pp-member">Physical Presenter (IEEE Member)</option>
                                                 <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
                                                 <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
