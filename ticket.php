@@ -260,7 +260,7 @@
         </div>
         <div class="auto-container">
             <div class="title-outer">
-                <h1>Buy Ticket</h1>
+                <h1>Register</h1>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">Home</a></li>
                     <li>Checkout</li>
@@ -281,13 +281,13 @@
                         <div class="row clearfix">
                             <div class="col-lg-7 col-md-12 col-sm-12">
                 
-                                <div class="sec-title"><h2>Ticket Details</h2></div>
+                                <div class="sec-title"><h2>Registration</h2></div>
                                 <div class="billing-inner">
                                     <div class="row clearfix">
 
                                         <!--Form Group-->
                                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                            <div class="field-label">Ticket Type </div>
+                                            <div class="field-label">Register Here</div>
                                             <select autocomplete="off" name="ticketType" id="ticketType">
                                                 <option selected="selected" value = "none">Select a ticket</option>
                                                 <option value="pp-member">Physical Presenter (IEEE Member)</option>
