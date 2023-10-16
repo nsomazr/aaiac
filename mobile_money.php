@@ -336,8 +336,20 @@
     </div>
 
         <!-- Payment Form -->
-        <h2 class="mt-5">Payment Reference</h2>
+        <h2 class="mt-5">Payment Details</h2>
         <form id="paymentForm" class="mt-3">
+        <div class="form-group">
+                <label for="referenceNumber">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required>
+            </div>
             <div class="form-group">
                 <label for="referenceNumber">Enter Reference Number:</label>
                 <input type="text" id="referenceNumber" name="referenceNumber" class="form-control" required>

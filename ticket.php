@@ -371,6 +371,21 @@
                     </div>
                 </div>
                 <hr>
+                <div class="row contact-list-one">
+                    <div class="col-md-6">
+                        <p> <i class="fa fa-user"> Dr. Jabhera Matogoro</i></p>
+                        <p><i class="fa fa-home">The University of Dodoma</i></p>
+                        <p><i class="fa fa-phone">+255 784 423 615</i></p>
+                        <p><i class="fa fa-envelope">jabhera.matogoro@ai4dlab.or.tz</i></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p> <i class="fa fa-user"> Dr. Judith Leo</i></p>
+                        <p><i class="fa fa-home">Nelson Mandela African Institute of Science and Technology</i></p>
+                        <p><i class="fa fa-phone">+255 652 647 046</i></p>
+                        <p><i class="fa fa-envelope">judith.leo@nm-aist.ac.tz</i></p>
+                    </div>
+                </div>
+                <hr>
                 <ul class="social-icon-two">
                     <li><a href="https://twitter.com/ai4dlab_Tz"><span class="fab fa-twitter"></span></a></li>
                     <li><a href="https://www.linkedin.com/company/ai4d-anglophone/mycompany/"><span class="fab fa-linkedin"></span></a></li>
