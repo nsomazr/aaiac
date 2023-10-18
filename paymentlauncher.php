@@ -11,7 +11,7 @@ if ($ticketType =="pp-member") {
 }
 if($ticketType =="pp-nmember"){
   $orderDescription="Physical Presenter (IEEE Non Meber)";
-    $amount = 10;
+    $amount = 100;
 }
 if($ticketType =="pnp-member"){
   $orderDescription="Physical Non Presenter (IEEE Meber)";
