@@ -117,13 +117,12 @@
         .popup {
             display: none;
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 15px;
+            top: 0; /* Position at the top of the window */
+            left: 0;
+            width: 100%;
             background-color: #f2f2f2;
-            border: 1px solid #ccc;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            text-align: center;
             z-index: 1;
         }
 
@@ -436,7 +435,7 @@
         </form>
         <br><br>
             <!-- Pop-up alert container -->
-    <div id="popup" class="popup">
+    <div id="popup" class="alert alert-success popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <p id="popupMessage"></p>
     </div>
