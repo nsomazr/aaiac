@@ -111,6 +111,31 @@
 
    
 </script>
+
+<style>
+        /* Styling for the pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Styling for the close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 
@@ -140,7 +165,7 @@
                                 <ul class="navigation clearfix">
                                     <li><a href="./index.html">Home</a></li>
                                     <li><a href="./index.html#about">About</a></li>
-                                    <li><a href="./index.html#contact">Contact us</a></li>
+                                    <li><a href="./contacts.html">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -356,17 +381,35 @@
             </div>
             <div class="form-group">
                 <label for="referenceNumber">Package Type:</label>
-                <input type="text" id="packageType" name="packageType" class="form-control" required>
+                    <select autocomplete="off" name="packageType">
+                    <option selected="selected" value = "none">Select a package</option>
+                    <option value="pp-member">Physical Presenter (IEEE Member)</option>
+                    <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
+                    <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
+                    <option value="pnp-nmember">Physical Non Presenter (IEEE Non-Member)</option>
+                    <option value="op-member">Online Presenter (IEEE Member)</option>
+                    <option value="op-nmember">Online Presenter (IEEE Non-Member)</option>
+                    <option value="onp-member">Online Non Presenter (IEEE Member)</option>
+                    <option value="onp-nmember">Online Non Presenter (IEEE Non-Member)</option>
+                    <option value="psp">Physical Student Presenter</option>
+                    <option value="psnp">Physical Student Non Presenter</option>
+                    <option value="osp">Online Student Presenter</option>
+                    <option value="osnp">Online Student Non Presenter</option>
+                </select>
             </div>
-            <div id="successMessage" class="alert alert-success mt-3" style="display:none;"></div>
+            
             <div class="ml-auto">
         <button type="submit" class="btn btn-primary">Submit</button>
         <a href="ticket.php" class="btn btn-danger">Cancel</a>
     </div>
         </form>
 
-        <!-- Display Reference Number -->
-        <div id="result" class="mt-3"></div>
+            <!-- Pop-up alert container -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="popupMessage"></p>
+    </div>
+
     </div>
 
     <!-- Bootstrap JS and dependencies -->
@@ -376,7 +419,24 @@
 
     <!-- jQuery and AJAX Script -->
     <script>
+
+        // Function to display the pop-up with a custom message
+        function showPopup(message) {
+            var popup = document.getElementById("popup");
+            var popupMessage = document.getElementById("popupMessage");
+
+            popupMessage.innerHTML = message;
+            popup.style.display = "block";
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none;
+        }
+
         $(document).ready(function() {
+            
             $("#paymentForm").submit(function(event) {
                 event.preventDefault();
 

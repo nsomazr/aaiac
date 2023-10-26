@@ -36,14 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO payments (fullName, email, phoneNumber, referenceNumber, packageType) 
             VALUES ('$fullName', '$email', '$phoneNumber', '$referenceNumber', '$packageType')";
 
-    if ($dbc->query($sql) === TRUE) {
-        $successMessage = "Thank you! Your payment details have been successfully received. You will receive a payment receipt via email upon bank reconciliation.";
-        echo $successMessage;
-    } else {
-        //echo "Error: " . $sql . "<br>" . $dbc->error;
-        $errorMessage = "Oops! Something went wrong while processing your payment details. Please try again later or contact support.";
-        echo $errorMessage;
-    }
+if ($dbc->query($sql) === TRUE) {
+    echo '<script>showPopup("Thank you! Your payment details have been successfully received. You will receive a payment receipt via email upon bank reconciliation.");</script>';
+} else {
+    // Handle the error and show an error message in the pop-up.
+    echo '<script>showPopup("Oops! Something went wrong while processing your payment details. Please try again later or contact support.");</script>';
+}
 }
 
 // Close Database Connection

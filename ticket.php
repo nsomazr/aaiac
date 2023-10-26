@@ -139,7 +139,7 @@
                                 <ul class="navigation clearfix">
                                     <li><a href="./index.html">Home</a></li>
                                     <li><a href="./index.html#about">About</a></li>
-                                    <li><a href="./index.html#contact">Contact us</a></li>
+                                    <li><a href="./contacts.html">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -349,6 +349,8 @@
     </div>
 
 
+
+
     <!-- Main Footer -->
     <footer class="main-footer" id="contact">
         <div class="auto-container">
@@ -371,26 +373,10 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row contact-list-one">
-                    <div class="col-md-6">
-                        <p> <i class="fa fa-user"> Dr. Jabhera Matogoro</i></p>
-                        <p><i class="fa fa-home">The University of Dodoma</i></p>
-                        <p><i class="fa fa-phone">+255 784 423 615</i></p>
-                        <p><i class="fa fa-envelope">jabhera.matogoro@ai4dlab.or.tz</i></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p> <i class="fa fa-user"> Dr. Judith Leo</i></p>
-                        <p><i class="fa fa-home">Nelson Mandela African Institute of Science and Technology</i></p>
-                        <p><i class="fa fa-phone">+255 652 647 046</i></p>
-                        <p><i class="fa fa-envelope">judith.leo@nm-aist.ac.tz</i></p>
-                    </div>
-                </div>
-                <hr>
                 <ul class="social-icon-two">
                     <li><a href="https://twitter.com/ai4dlab_Tz"><span class="fab fa-twitter"></span></a></li>
                     <li><a href="https://www.linkedin.com/company/ai4d-anglophone/mycompany/"><span class="fab fa-linkedin"></span></a></li>
                 </ul>
-
                 <ul class="contact-list-one">
                     <li><i class="flaticon-location"></i> P. O. Box 490, Dodoma, Tanzania <strong>Address</strong></li>
                     <li><i class="flaticon-alarm-clock-1"></i>Monday - Friday 9am - 4pm <strong>Timing</strong></li>
@@ -417,13 +403,6 @@
     <!-- End Footer -->
 
 </div>
-
-
-
-
-
-
-
 <!-- End Page Wrapper -->
 
 <!--Scroll to top-->
@@ -453,6 +432,5 @@
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/wow.js"></script>
 <script src="assets/js/script.js"></script>
-
 </body>
 </html>
