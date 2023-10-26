@@ -18,7 +18,7 @@ if($dbc){
 	
 }
 else{
-       // echo "<script>alert('Connect Failed');</script>";
+       // echo "<scrip;>alert('Connect Failed');</script>";
 		trigger_error("Could not connect to MySQL");
 		exit();
 }
@@ -36,12 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO payments (fullName, email, phoneNumber, referenceNumber, packageType) 
             VALUES ('$fullName', '$email', '$phoneNumber', '$referenceNumber', '$packageType')";
 
-if ($dbc->query($sql) === TRUE) {
-    echo '<script>showPopup("Thank you! Your payment details have been successfully received. You will receive a payment receipt via email upon bank reconciliation.");</script>';
-} else {
-    // Handle the error and show an error message in the pop-up.
-    echo '<script>showPopup("Oops! Something went wrong while processing your payment details. Please try again later or contact support.");</script>';
-}
+    if ($dbc->query($sql) === TRUE) {
+        echo "Thank you! Your payment details have been successfully received. You will receive a payment receipt via email upon bank reconciliation.";
+    } else {
+        // Handle the error and show an error message in the pop-up.
+        echo "Oops! Something went wrong while processing your payment details. Please try again later or contact support.";
+    }
 }
 
 // Close Database Connection
