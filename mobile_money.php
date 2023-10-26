@@ -452,7 +452,7 @@
                 // Send data to PHP script using AJAX
                 $.ajax({
                     type: "POST",
-                    url: "process.php", // Your PHP script file
+                    url: "process_mobile.php", // Your PHP script file
                     data: formData,
                     success: function(response) {
                         // Display success message and hide form

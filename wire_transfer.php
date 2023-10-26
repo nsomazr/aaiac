@@ -317,17 +317,18 @@
                 <input type="text" id="fullName" name="fullName" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required>
+                <label for="email">Country:</label>
+                <input type="email" id="email" name="country" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="referenceNumber">Enter Reference Number:</label>
                 <input type="text" id="referenceNumber" name="referenceNumber" class="form-control" required>
             </div>
+            <div class="form-group">
+                <label for="phoneNumber">Bank:</label>
+                <input type="tel" id="phoneNumber" name="bank" class="form-control" required>
+            </div>
+
             <div class="form-group">
                 <label for="referenceNumber">Package Type:</label>
                 <select autocomplete="off" name="packageType" class="form-control" required>
@@ -346,7 +347,10 @@
                     <option value="Online Student Non Presenter">Online Student Non Presenter</option>
                 </select>
             </div>
-            
+            <div class="form-group">
+                <label for="referenceNumber">Payment Reference Paper:</label>
+                <input type="text" id="referenceNumber" name="paperNumber" class="form-control" required>
+            </div>
             <div class="ml-auto">
         <button type="submit" class="btn btn-primary">Submit</button>
         <a href="ticket.php" class="btn btn-danger">Cancel</a>
@@ -394,7 +398,7 @@
                 // Send data to PHP script using AJAX
                 $.ajax({
                     type: "POST",
-                    url: "process.php", // Your PHP script file
+                    url: "process_wire.php", // Your PHP script file
                     data: formData,
                     success: function(response) {
                         // Display success message and hide form

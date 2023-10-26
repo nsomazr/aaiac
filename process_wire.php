@@ -27,14 +27,16 @@ else{
 // Process Form Submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = mysqli_real_escape_string($dbc, $_POST["fullName"]); // Sanitize user input
-    $email = mysqli_real_escape_string($dbc, $_POST["email"]);
-    $phoneNumber = mysqli_real_escape_string($dbc, $_POST["phoneNumber"]);
+    $country = mysqli_real_escape_string($dbc, $_POST["country"]);
+    $bank = mysqli_real_escape_string($dbc, $_POST["bank"]);
     $referenceNumber = mysqli_real_escape_string($dbc, $_POST["referenceNumber"]);
     $packageType = mysqli_real_escape_string($dbc, $_POST["packageType"]);
+    $paperNumber= mysqli_real_escape_string($dbc, $_POST["paperNumber"]);
+    
 
     // Insert Data into Database
-    $sql = "INSERT INTO payments (fullName, email, phoneNumber, referenceNumber, packageType) 
-            VALUES ('$fullName', '$email', '$phoneNumber', '$referenceNumber', '$packageType')";
+    $sql = "INSERT INTO wired (fullName, country, bank, referenceNumber, packageType, paperNumber) 
+            VALUES ('$fullName', '$country','$bank', '$referenceNumber', '$packageType','$paperNumber')";
 
     if ($dbc->query($sql) === TRUE) {
         echo "Thank you! Your payment details have been successfully received. You will receive a payment receipt via email upon bank reconciliation.";
