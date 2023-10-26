@@ -318,7 +318,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Country:</label>
-                <input type="email" id="email" name="country" class="form-control" required>
+                <input type="text" id="country" name="country" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="referenceNumber">Enter Reference Number:</label>
@@ -326,7 +326,7 @@
             </div>
             <div class="form-group">
                 <label for="phoneNumber">Bank:</label>
-                <input type="tel" id="phoneNumber" name="bank" class="form-control" required>
+                <input type="text" id="bank" name="bank" class="form-control" required>
             </div>
 
             <div class="form-group">
