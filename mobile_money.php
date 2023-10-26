@@ -337,7 +337,7 @@
 
         <!-- Payment Form -->
         <h2 class="mt-5">Payment Details</h2>
-        <form  class="mt-3" method="POST" action="process.php">
+        <form  class="mt-3" method="POST" id="paymentForm">
         <div class="form-group">
                 <label for="referenceNumber">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" class="form-control" required>
