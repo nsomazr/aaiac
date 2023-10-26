@@ -299,11 +299,42 @@
     <div class="container">
         <h1>Payment Instructions</h1>
         <p>Payment Details:</p>
-        <ol>
+
+        <div class="container">
+        <div class="row">
+            <!-- Vodacom -->
+            <!-- <div class="col-md-6">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Details 1</h5>
+                        <p class="card-text">Account Number: <b>408 1011 4173</b></p>
+                        <p class="card-text">Account Name: <b>IEEE Tanzania Section</b></p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Tigo -->
+            <div class="col-md-12">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Details</h5>
+                        <p class="card-text">Account Number: <b>408 1011 4173</b></p>
+                        <p class="card-text">Account Name: <b>IEEE Tanzania Section</b></p>
+                        <p class="card-text">Bank Address: <b>Clock Tower Branch, Arusha</b></p>
+                        <p class="card-text">Bank City: <b>Arusha</b></p>
+                        <p class="card-text">BIC/Swift Code: <b>NMIBTZTZ XXX</b></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- <ol>
             <li>Account Number: <b>408 1011 4173</b></li>
             <li>Account Name: <b>IEEE Tanzania Section</b></li>
-        </ol>
-        <p>Please follow the instructions below to make the payment:</p>
+        </ol> -->
+        <br>
+        <p>Please follow the instructions below for mobile payment:</p>
         <ol>
             <li>Choose your preferred mobile network and dial the respective code.</li>
             <li>Enter the amount based on the current exchange rate and confirm the payment.</li>
@@ -403,7 +434,7 @@
         <a href="ticket.php" class="btn btn-danger">Cancel</a>
     </div>
         </form>
-
+        <br><br>
             <!-- Pop-up alert container -->
     <div id="popup" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
@@ -432,7 +463,7 @@
         // Function to close the pop-up
         function closePopup() {
             var popup = document.getElementById("popup");
-            popup.style.display = "none;
+            popup.style.display = "none";
         }
 
         $(document).ready(function() {
