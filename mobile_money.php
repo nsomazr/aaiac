@@ -381,20 +381,20 @@
             </div>
             <div class="form-group">
                 <label for="referenceNumber">Package Type:</label>
-                    <select autocomplete="off" name="packageType">
+                <select autocomplete="off" name="packageType" class="form-control" required>
                     <option selected="selected" value = "none">Select a package</option>
-                    <option value="pp-member">Physical Presenter (IEEE Member)</option>
-                    <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
-                    <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
-                    <option value="pnp-nmember">Physical Non Presenter (IEEE Non-Member)</option>
-                    <option value="op-member">Online Presenter (IEEE Member)</option>
-                    <option value="op-nmember">Online Presenter (IEEE Non-Member)</option>
-                    <option value="onp-member">Online Non Presenter (IEEE Member)</option>
-                    <option value="onp-nmember">Online Non Presenter (IEEE Non-Member)</option>
-                    <option value="psp">Physical Student Presenter</option>
-                    <option value="psnp">Physical Student Non Presenter</option>
-                    <option value="osp">Online Student Presenter</option>
-                    <option value="osnp">Online Student Non Presenter</option>
+                    <option value="Physical Presenter (IEEE Member)">Physical Presenter (IEEE Member)</option>
+                    <option value="Physical Presenter (IEEE Non-Member)">Physical Presenter (IEEE Non-Member)</option>
+                    <option value="Physical Non Presenter (IEEE Member)">Physical Non Presenter (IEEE Member)</option>
+                    <option value="Physical Non Presenter (IEEE Non-Member)">Physical Non Presenter (IEEE Non-Member)</option>
+                    <option value="Online Presenter (IEEE Member)">Online Presenter (IEEE Member)</option>
+                    <option value="Online Presenter (IEEE Non-Member)">Online Presenter (IEEE Non-Member)</option>
+                    <option value="Online Non Presenter (IEEE Member)">Online Non Presenter (IEEE Member)</option>
+                    <option value="Online Non Presenter (IEEE Non-Member)">Online Non Presenter (IEEE Non-Member)</option>
+                    <option value="Physical Student Presenter">Physical Student Presenter</option>
+                    <option value="Physical Student Non Presenter">Physical Student Non Presenter</option>
+                    <option value="Online Student Presenter">Online Student Presenter</option>
+                    <option value="Online Student Non Presenter">Online Student Non Presenter</option>
                 </select>
             </div>
             
