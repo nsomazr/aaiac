@@ -40,8 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $successMessage = "Thank you! Your payment details have been successfully received. You will receive a payment receipt via email upon bank reconciliation.";
         echo $successMessage;
     } else {
-        echo "Error: " . $sql . "<br>" . $dbc->error;
+        //echo "Error: " . $sql . "<br>" . $dbc->error;
         $errorMessage = "Oops! Something went wrong while processing your payment details. Please try again later or contact support.";
+        echo $errorMessage;
     }
 }
 

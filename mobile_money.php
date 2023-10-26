@@ -382,7 +382,7 @@
 
                 // Gather form data
                 var formData = $(this).serialize();
-                alert(formData);
+                //alert(formData);
                 // Send data to PHP script using AJAX
                 $.ajax({
                     type: "POST",
