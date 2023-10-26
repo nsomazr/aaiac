@@ -391,7 +391,7 @@
                     success: function(response) {
                         // Display success message and hide form
                         $("#successMessage").text(response).show();
-                        $("#paymentForm").hide();
+                        $("#paymentForm").reset();
                        // alert("Details have been received successfully.");
                     }
                 });
