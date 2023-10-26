@@ -111,7 +111,22 @@
 
    
 </script>
+
+<style>
+        /* Additional custom styles for the pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 70px; /* Adjust the top position to clear the navbar */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%; /* Set the width to 60% of the viewport */
+            z-index: 1000; /* Set a high z-index value to appear above the navbar */
+        }
+    </style>
+
 </head>
+
 
 <body>
 
@@ -260,160 +275,139 @@
         </div>
         <div class="auto-container">
             <div class="title-outer">
-                <h1>Register</h1>
+                <h1>Registration</h1>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li>Checkout</li>
+                    <li>Wire Transfer</li>
                 </ul> 
             </div>
         </div>
     </section>
     <!--End Page Title-->
+    <br>
+    <div class="container">
+        <h1>Payment Instructions</h1>
+        <p>Payment Details:</p>
 
-    <!--Checkout Page-->
-    <div class="checkout-page">
-        <div class="auto-container">
-                
-            <!--Billing Details-->
-            <div class="billing-details">
-                <div class="shop-form">
-                    <form  enctype="multipart/form-data" action="paymentlauncher.php" method="POST">
-                        <div class="row clearfix">
-                            <div class="col-lg-7 col-md-12 col-sm-12">
-                
-                                <div class="sec-title"><h2>Registration</h2></div>
-                                <div class="billing-inner">
-                                    <div class="row clearfix">
-
-                                        <!--Form Group-->
-                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                            <div class="field-label">Register Here</div>
-                                            <select autocomplete="off" name="ticketType" id="ticketType">
-                                                <option selected="selected" value = "none">Select a package</option>
-                                                <option value="pp-member">Physical Presenter (IEEE Member)</option>
-                                                <option value="pp-nmember">Physical Presenter (IEEE Non-Member)</option>
-                                                <option value="pnp-member">Physical Non Presenter (IEEE Member)</option>
-                                                <option value="pnp-nmember">Physical Non Presenter (IEEE Non-Member)</option>
-                                                <option value="op-member">Online Presenter (IEEE Member)</option>
-                                                <option value="op-nmember">Online Presenter (IEEE Non-Member)</option>
-                                                <option value="onp-member">Online Non Presenter (IEEE Member)</option>
-                                                <option value="onp-nmember">Online Non Presenter (IEEE Non-Member)</option>
-                                                <option value="psp">Physical Student Presenter</option>
-                                                <option value="psnp">Physical Student Non Presenter</option>
-                                                <option value="osp">Online Student Presenter</option>
-                                                <option value="osnp">Online Student Non Presenter</option>
-                                            </select><br>
-                                            <div class="field-label text-danger" id="valid">Please select a valid ticket! </div>
-                                        </div>
-      
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            <div class="col-lg-5 col-md-12 col-sm-12">
-                                <div class="sec-title"><h2>Registration Details</h2></div>
-                                <div class="shop-order-box">
-                                    <ul class="order-list">
-                                        <li>Package Type</li>
-                                        <li id="tt">Not Selected</li>
-                                        <li class="total">Total Fee<span class="dark" id="total">$00</span></li>
-                                    </ul>
-                                    
-                                    
-                                    <!--Place Order-->
-                                    <div class="place-order">
-                                        <!--Payment Options-->
-                                        <div class="radio-option">
-                                            <!-- <img src="assets/images/resource/paypall.jpg" alt="" /></label> -->
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                            <button type="submit" name="submit" class="theme-btn btn-style-one" style="width:100%;" ><span class="btn-title">Credit Card</span></button>
-                                            </div><hr>
-                                            <div class="col-md-6">
-                                            <a href="mobile_money.php" name="submit" class="theme-btn btn-style-one pull-right" ><span class="btn-title">Mobile Money</span></a>
-                                            </div>
-                                            <div class="col-md-6">
-                                            <a href="wire_transfer.php" name="submit" class="theme-btn btn-style-one pull-right" ><span class="btn-title">Wire Transfer</span></a>
-                                            </div>
-                                        </div>
-                                       
-                                       
-                                        
-                                        
-                                    </div>
-                                    <!--End Place Order-->
-                                    
-                                </div>
-                                
-                                
-                            </div>
-                        </div>                             
-                    </form>
-                    
+        <div class="container">
+        <div class="row">
+            <!-- Tigo -->
+            <div class="col-md-12">
+                <div class="card payment-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Wire Transfer</h5>
+                        <p class="card-text">Account Number: <b>408 1011 4173</b></p>
+                        <p class="card-text">Account Name: <b>IEEE Tanzania Section</b></p>
+                        <p class="card-text">Bank Address: <b>Clock Tower Branch, Arusha</b></p>
+                        <p class="card-text">Bank City: <b>Arusha</b></p>
+                        <p class="card-text">BIC/Swift Code: <b>NMIBTZTZ XXX</b></p>
+                    </div>
                 </div>
-                
-            </div><!--End Billing Details-->
+            </div>
+
         </div>
     </div>
 
 
-
-
-    <!-- Main Footer -->
-    <footer class="main-footer" id="contact">
-        <div class="auto-container">
-            <!-- Footer Content -->
-            <div class="footer-content wow fadeInUp">
-                <div class="text-center">
-                    <div class="footer-logo"><a href="#"><img src="assets/images/logo-light.png" alt=""></a></div>
-                    <div class="text">Artificial Intelligence for Development AI4D - Lab A unique collaboration between UDOM & NM-AIST to foster Research, Training and Innovation in AI. The Lab is funded by IDRC and Sida through the AI4D Africa Program.</div> 
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <figure class="image-box"><a href="#" ><img src="assets/images/clients/idrc.jpg" alt="" width="150" height="100"></a></figure>
-                        </div>
-                        <div class="col-md-4">
-                            <figure class="image-box"><a href="#"><img src="assets/images/clients/Sida.jpg" alt="" width="150" height="100"></a></figure>
-                        </div>
-                        <div class="col-md-4">
-                            <figure class="image-box"><a href="#"><img src="assets/images/clients/ai4d.jpg" alt="" width="150" height="100"></a></figure>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <ul class="social-icon-two">
-                    <li><a href="https://twitter.com/ai4dlab_Tz"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="https://www.linkedin.com/company/ai4d-anglophone/mycompany/"><span class="fab fa-linkedin"></span></a></li>
-                </ul>
-                <ul class="contact-list-one">
-                    <li><i class="flaticon-location"></i> P. O. Box 490, Dodoma, Tanzania <strong>Address</strong></li>
-                    <li><i class="flaticon-alarm-clock-1"></i>Monday - Friday 9am - 4pm <strong>Timing</strong></li>
-                    <li><i class="flaticon-email-1"></i> <a href="mailto:envato@gmail.com">conference@ai4dlab.or.tz</a> <strong>Mail to us</strong></li>
-                </ul>
+        <!-- Payment Form -->
+        <h2 class="mt-5">Payment Details</h2>
+        <form  class="mt-3" method="POST" id="paymentForm">
+        <div class="form-group">
+                <label for="referenceNumber">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" required>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <ul class="footer-nav">
-                       <li><a href="#">Terms of Service</a></li> 
-                       <li><a href="#">Privacy Policy</a></li> 
-                    </ul>
-                    
-                    <div class="copyright-text">
-                        <p>Copyright © 2023 All Rights Reserved. Developed by <a href="https://nsoma.me">Nsoma</a></p>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
             </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="referenceNumber">Enter Reference Number:</label>
+                <input type="text" id="referenceNumber" name="referenceNumber" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="referenceNumber">Package Type:</label>
+                <select autocomplete="off" name="packageType" class="form-control" required>
+                    <option selected="selected" value = "none">Select a package</option>
+                    <option value="Physical Presenter (IEEE Member)">Physical Presenter (IEEE Member)</option>
+                    <option value="Physical Presenter (IEEE Non-Member)">Physical Presenter (IEEE Non-Member)</option>
+                    <option value="Physical Non Presenter (IEEE Member)">Physical Non Presenter (IEEE Member)</option>
+                    <option value="Physical Non Presenter (IEEE Non-Member)">Physical Non Presenter (IEEE Non-Member)</option>
+                    <option value="Online Presenter (IEEE Member)">Online Presenter (IEEE Member)</option>
+                    <option value="Online Presenter (IEEE Non-Member)">Online Presenter (IEEE Non-Member)</option>
+                    <option value="Online Non Presenter (IEEE Member)">Online Non Presenter (IEEE Member)</option>
+                    <option value="Online Non Presenter (IEEE Non-Member)">Online Non Presenter (IEEE Non-Member)</option>
+                    <option value="Physical Student Presenter">Physical Student Presenter</option>
+                    <option value="Physical Student Non Presenter">Physical Student Non Presenter</option>
+                    <option value="Online Student Presenter">Online Student Presenter</option>
+                    <option value="Online Student Non Presenter">Online Student Non Presenter</option>
+                </select>
+            </div>
+            
+            <div class="ml-auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="ticket.php" class="btn btn-danger">Cancel</a>
+    </div>
+        </form>
+        <br><br>
+    <div id="popup" class="alert alert-success popup">
+        <button type="button" class="close" data-dismiss="alert" onclick="closePopup()">&times;</button>
+        <p id="popupMessage">Details have been received successfully!</p>
+    </div>
 
-</div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery and AJAX Script -->
+    <script>
+
+        // Function to display the pop-up with a custom message
+        function showPopup(message) {
+            var popup = document.getElementById("popup");
+            var popupMessage = document.getElementById("popupMessage");
+
+            popupMessage.innerHTML = message;
+            popup.style.display = "block";
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+        $(document).ready(function() {
+            
+            $("#paymentForm").submit(function(event) {
+                event.preventDefault();
+
+                // Gather form data
+                var formData = $(this).serialize();
+                //alert(formData);
+                // Send data to PHP script using AJAX
+                $.ajax({
+                    type: "POST",
+                    url: "process.php", // Your PHP script file
+                    data: formData,
+                    success: function(response) {
+                        // Display success message and hide form
+                        showPopup(response);
+                        $("#paymentForm")[0].reset();
+                       // alert("Details have been received successfully.");
+                    }
+                });
+            });
+        });
+</script>
+</body>
+
 <!-- End Page Wrapper -->
 
 <!--Scroll to top-->
@@ -443,5 +437,6 @@
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/wow.js"></script>
 <script src="assets/js/script.js"></script>
+
 </body>
 </html>

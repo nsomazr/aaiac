@@ -275,7 +275,7 @@
         </div>
         <div class="auto-container">
             <div class="title-outer">
-                <h1>Buy Ticket</h1>
+                <h1>Registration</h1>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">Home</a></li>
                     <li>Mobile Money Payment</li>
@@ -292,25 +292,12 @@
         <div class="container">
         <div class="row">
             <!-- Vodacom -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card payment-card">
                     <div class="card-body">
                         <h5 class="card-title">Mobile Money</h5>
                         <p class="card-text">Account Number: <b>408 1011 4173</b></p>
                         <p class="card-text">Account Name: <b>IEEE Tanzania Section</b></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tigo -->
-            <div class="col-md-6">
-                <div class="card payment-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Wire Transfer</h5>
-                        <p class="card-text">Account Number: <b>408 1011 4173</b></p>
-                        <p class="card-text">Account Name: <b>IEEE Tanzania Section</b></p>
-                        <p class="card-text">Bank Address: <b>Clock Tower Branch, Arusha</b></p>
-                        <p class="card-text">Bank City: <b>Arusha</b></p>
-                        <p class="card-text">BIC/Swift Code: <b>NMIBTZTZ XXX</b></p>
                     </div>
                 </div>
             </div>
