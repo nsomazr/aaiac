@@ -117,13 +117,15 @@
         .popup {
             display: none;
             position: fixed;
-            top: 0; /* Position at the top of the window */
-            left: 0;
-            width: 100%;
-            background-color: #f2f2f2;
+            top: 70px; /* Adjust the top position to clear the navbar */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%; /* Set the width to 60% of the viewport */
+            background-color: #28a745; /* Success background color */
+            color: white;
             padding: 15px;
             text-align: center;
-            z-index: 1;
+            z-index: 1000; /* Set a high z-index value to appear above the navbar */
         }
 
         /* Styling for the close button */
