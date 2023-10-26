@@ -1,22 +1,28 @@
 <?php
 echo "<script>alert('Init');</script>";
 
-DEFINE("DBUSER", "ai4dlab");
 DEFINE("DBHOST", "localhost");
-DEFINE("DBNAME", "ai4dlabdb");
+DEFINE("DBUSER", "aidlabor_ai4dlab");
 DEFINE("DBPWD", "@i4dl@b_cms");
+DEFINE("DBNAME", "aidlabor_conference");
+$dbc = mysqli_connect(DBHOST,DBUSER,DBPWD);
+if($dbc){
 
-$dbc = mysqli_connect(DBHOST, DBUSER, DBPWD, DBNAME); // Include the database name in the connection
+    if (!mysqli_select_db($dbc,DBNAME)) {
+        echo "<script>alert('Connect Failed DB');</script>";
+    	trigger_error("Could not select the database <br>");
+    	exit();
+    }
 
-echo "<script>alert('Well 1');</script>";
-
-if ($dbc) {
-    echo "<script>alert('Well 2');</script>";
-} else {
-    echo "<script>alert('Connect Failed');</script>";
-    trigger_error("Could not connect to MySQL");
-    exit; // Exit the script in case of a database connection error
+    echo "<script>alert('Well All');</script>";
+	
 }
+else{
+        echo "<script>alert('Connect Failed');</script>";
+		trigger_error("Could not connect to MySQL");
+		exit();
+}
+
 
 // Process Form Submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
