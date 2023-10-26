@@ -302,7 +302,7 @@
                 </div>
             </div>
             <!-- Tigo -->
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="card payment-card">
                     <div class="card-body">
                         <h5 class="card-title">Wire Transfer</h5>
