@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>AAIAC 2023 | Ticket</title>
+<title>AAIAC 2023 | Registration</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->

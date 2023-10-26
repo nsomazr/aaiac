@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>AAIAC 2023 | Ticket</title>
+<title>AAIAC 2023 | Registration</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
@@ -337,7 +337,7 @@
 
         <!-- Payment Form -->
         <h2 class="mt-5">Payment Details</h2>
-        <form id="paymentForm" class="mt-3">
+        <form  class="mt-3" method="POST" action="process.php">
         <div class="form-group">
                 <label for="referenceNumber">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" class="form-control" required>
@@ -354,6 +354,11 @@
                 <label for="referenceNumber">Enter Reference Number:</label>
                 <input type="text" id="referenceNumber" name="referenceNumber" class="form-control" required>
             </div>
+            <div class="form-group">
+                <label for="referenceNumber">Package Type:</label>
+                <input type="text" id="packageType" name="packageType" class="form-control" required>
+            </div>
+            <div id="successMessage" class="alert alert-success mt-3" style="display:none;"></div>
             <div class="ml-auto">
         <button type="submit" class="btn btn-primary">Submit</button>
         <a href="ticket.php" class="btn btn-danger">Cancel</a>
@@ -371,21 +376,28 @@
 
     <!-- jQuery and AJAX Script -->
     <script>
-        $(document).ready(function () {
-            // Form Validation and AJAX Request
-            $('#paymentForm').submit(function (e) {
-                e.preventDefault();
-                var referenceNumber = $('#referenceNumber').val();
+        $(document).ready(function() {
+            $("#paymentForm").submit(function(event) {
+                event.preventDefault();
 
-                // Simulate processing delay (remove this in real implementation)
-                setTimeout(function () {
-                    // Generate a random reference number for demonstration
-                    var randomReference = Math.floor(Math.random() * 1000000000);
-                    $('#result').html('Reference Number: ' + randomReference);
-                }, 1500);
+                // Gather form data
+                var formData = $(this).serialize();
+                alert(formData);
+                // Send data to PHP script using AJAX
+                $.ajax({
+                    type: "POST",
+                    url: "process.php", // Your PHP script file
+                    data: formData,
+                    success: function(response) {
+                        // Display success message and hide form
+                        $("#successMessage").text(response).show();
+                        $("#paymentForm").hide();
+                       // alert("Details have been received successfully.");
+                    }
+                });
             });
         });
-    </script>
+</script>
 </body>
 
 <!-- End Page Wrapper -->

@@ -10,11 +10,11 @@ if ($ticketType =="pp-member") {
     $amount = 80;
 }
 if($ticketType =="pp-nmember"){
-  $orderDescription="Physical Presenter (IEEE Non Meber)";
+  $orderDescription="Physical Presenter (IEEE Non Member)";
     $amount = 100;
 }
 if($ticketType =="pnp-member"){
-  $orderDescription="Physical Non Presenter (IEEE Meber)";
+  $orderDescription="Physical Non Presenter (IEEE Member)";
     $amount = 64;
 }
 if($ticketType =="pnp-nmember"){
@@ -26,15 +26,15 @@ if ($ticketType =="op-member") {
     $amount = 64;
 }
 if($ticketType =="op-nmember"){
-  $orderDescription="Online Presenter (IEEE Non Membr)";
+  $orderDescription="Online Presenter (IEEE Non Member)";
     $amount = 84;
 }
 if($ticketType =="onp-member"){
-  $orderDescription="Online Non Presenter (IEEE Membr)";
+  $orderDescription="Online Non Presenter (IEEE Member)";
     $amount = 40;
 }
 if($ticketType =="onp-nmember"){
-  $orderDescription="Online Non Presenter (IEEE Non ember)";
+  $orderDescription="Online Non Presenter (IEEE Non Member)";
     $amount = 50;
 }
 if($ticketType =="psp"){
