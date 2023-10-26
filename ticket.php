@@ -330,7 +330,7 @@
                                         </div>
                                         
                                         <button type="submit" name="submit" class="theme-btn btn-style-one" ><span class="btn-title">Credit Card</span></button>
-                                        <a href="mobile_money.php" name="submit" class="theme-btn btn-style-one pull-right" ><span class="btn-title">Mobile Money</span></a>
+                                        <a href="mobile_money.php" name="submit" class="theme-btn btn-style-one pull-right" ><span class="btn-title">Other Method</span></a>
                                         
                                     </div>
                                     <!--End Place Order-->
