@@ -113,7 +113,7 @@
 </script>
 
 <style>
-        /* Styling for the pop-up */
+        /* Additional custom styles for the pop-up */
         .popup {
             display: none;
             position: fixed;
@@ -121,19 +121,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 60%; /* Set the width to 60% of the viewport */
-            background-color: #28a745; /* Success background color */
-            color: white;
-            padding: 15px;
-            text-align: center;
             z-index: 1000; /* Set a high z-index value to appear above the navbar */
-        }
-
-        /* Styling for the close button */
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
         }
     </style>
 
@@ -436,10 +424,9 @@
     </div>
         </form>
         <br><br>
-            <!-- Pop-up alert container -->
     <div id="popup" class="alert alert-success popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <p id="popupMessage"></p>
+        <button type="button" class="close" data-dismiss="alert" onclick="closePopup()">&times;</button>
+        <p id="popupMessage">Details have been received successfully!</p>
     </div>
 
     </div>
