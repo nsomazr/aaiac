@@ -4,7 +4,7 @@ $orderAmount = $_GET['amount'];
 $orderDescription = $_GET['orderDescription'];
 $uniqueOrderId =$_GET['OrderID'];
 
-$url = "https://nmbbank.gateway.mastercard.com/api/nvp/version/64";
+$url = "https://nmbbank.gateway.mastercard.com/api/nvp/version/67";
 $data = array(
 "apiOperation"=>"INITIATE_CHECKOUT", 
 "apiPassword"=>"a46e104a0ca8f0b9c0d0559563cc5893", 
@@ -14,6 +14,7 @@ $data = array(
 "interaction.operation"=>"PURCHASE" ,
 'interaction.cancelUrl'=>"http://localhost/paymentapp/paymentlauncher.php", // replace with a real Url on production
 "order.id"=>$uniqueOrderId, // you might need to generate meaningful unique IDs for each transaction
+"order.reference"=>$uniqueOrderId,
 "order.description"=>$orderDescription, // replace with a good description
 "order.amount"=>$orderAmount, // put here the exact amount to be paid
 "order.currency"=>"USD"); // put here the exact currency you need to operate on
